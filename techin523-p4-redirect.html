@@ -1,0 +1,30 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62959002-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-62959002-1');
+</script>
+
+<script>
+    // An array of URL's
+    var randURLs = [
+        "http://google.com",
+        "http://baidu.com",
+    ];
+
+    // There was a 1 in 500 chance we generated a zero.
+	// randURLs.length will tell us how many elements are
+	// in the randURLs array - we can use this to generate
+	// a random number between 0 and n (number of elements)
+	//
+	// In our case there are 3 elements in the array, 0, 1
+	// and 2. So we want to get another random number in
+	// the inclusive range 0 - 2
+	//
+	var randURL = Math.floor(Math.random() * randURLs.length);
+
+	window.location.replace(randURLs[randURL]);
+</script>
